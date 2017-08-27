@@ -11,20 +11,22 @@ public class Chapter18 {
         System.out.println("Please enter a string of characters containing both upper and lower cases.");
         Scanner Keyboard = new Scanner(System.in);
         String userInput = Keyboard.nextLine();
-        int y = caseCheck(userInput,0,0);
+        System.out.println("There are: "+ caseCheck(userInput,0,0)+" upper case letters in this string.");
 
 
     }
     public static int caseCheck(String s, int x,int y) {
-        if (x == s.length()) {
+        if (x == s.length())
             return y;
-        } else {
+        else {
             if (Character.isUpperCase(s.charAt(x))) {
                 y++;
                 return caseCheck(s, (x + 1), y);
-            }
+            } else
+                return caseCheck(s, (x + 1), y);
+
         }
-        return y;
     }
+
 }
 
