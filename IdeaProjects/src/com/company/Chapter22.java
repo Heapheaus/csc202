@@ -14,7 +14,7 @@ public class Chapter22 {
             // 1 long = 64 bits or 8 bytes. 8*455,052,511 = 3,640,420,088 bytes. The input on skip is an int,
             // so it caps at 2.1 billion
             rand.skipBytes(2000000000);
-            rand.skipBytes(1640420088);
+            rand.skipBytes(1640419288);//800 bytes / the last 100 longs worth shorter.
             String line;
             while (rand.readLine()!=null){
                 line = rand.readLine();
