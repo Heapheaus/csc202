@@ -336,7 +336,7 @@ public class Chapter23 {
 
         System.out.println("Array Size | Selection Sort | Bubble Sort | Merge Sort | Quick Sort | Heap Sort | Radix Sort");
         System.out.println("50,000: | "+executionTimesel50+" | "+executionTimeBub50+" | "+executionTimeM50+" | "
-        +executionTimeQ50+" | "+endTimeH50+" | "+executionTimeR50);
+        +executionTimeQ50+" | "+executionTimeH50+" | "+executionTimeR50);
         System.out.println("100,000: | "+executionTimesel100+" | "+executionTimeBub100+" | "+executionTimeM100+" | "
                 +executionTimeQ100+" | "+executionTimeH100+" | "+executionTimeR100);
         System.out.println("150,000: | "+executionTimesel150+" | "+executionTimeBub150+" | "+executionTimeM150+" | "
